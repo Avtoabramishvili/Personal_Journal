@@ -34,24 +34,24 @@ Application is Developed in Android Studio, Using Kotlin Language with a bunch o
 
 ### 📸 Screenshots
 
-####  Login Screen
-![Authorization](screenshots/Screenshot_20250619_024016.png)
+<h4>🔐 Login Screen</h4>
+<img src="screenshots/Screenshot_20250619_024016.png" width="300"/>
 
-####  Registration Screen
-![Registration](screenshots/Screenshot_20250619_024034.png)
+<h4>📝 Registration Screen</h4>
+<img src="screenshots/Screenshot_20250619_024034.png" width="300"/>
 
-####  Home Screen
-![Home Page](screenshots/Screenshot_20250619_024103.png)
+<h4>🏠 Home Screen</h4>
+<img src="screenshots/Screenshot_20250619_024103.png" width="300"/>
 
+<h4>➕ Adding Entry</h4>
+<img src="screenshots/Screenshot_20250619_024133.png" width="300"/>
 
-####  Adding Entry
-![Add Entry](screenshots/Screenshot_20250619_024133.png)
+<h4>👤 Profile Page</h4>
+<img src="screenshots/Screenshot_20250619_024321.png" width="300"/>
 
-####  Profile Page
-![Profile](screenshots/Screenshot_20250619_024321.png)
+<h4>🛠️ Edit/Delete</h4>
+<img src="screenshots/Screenshot_20250619_025025.png" width="300"/>
 
-####  Edit/Delete
-![Edit/Delete](screenshots/Screenshot_20250619_025025.png)
 
 
 
