@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "450115529556",
+    "project_id": "finaluri-1262e",
+    "storage_bucket": "finaluri-1262e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450115529556:android:55f0d41e87a3f63d32f6c1",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxiixcR3UhT_1-xZy4MVK_iuefa_fkQrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

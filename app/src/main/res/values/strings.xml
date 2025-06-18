@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Journal</string>
+    <string name="title_home">ჩემი ჩანაწერები</string>
+    <string name="title_add_entry">ჩანაწერის დამატება</string>
+    <string name="title_profile">პროფილი</string>
+    <string name="no_entries_found">შენ არ გაქვს არცერთი ჩანაწერი!</string>
+</resources>

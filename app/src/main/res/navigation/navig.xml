@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_login">
+
+    <!-- Authentication Flow -->
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.myapplication.frags.LoginFragment"
+        android:label="ავტორიზაცია"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/navigation_register"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/navigation_login"
+            app:popUpToInclusive="true" /> <!-- Added popUpTo for clean login transition -->
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_register"
+        android:name="com.example.myapplication.frags.RegisterFragment"
+        android:label="რეგისტრაცია"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/navigation_login"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/navigation_register"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.frags.HomeFragment"
+        android:label="ჩემი ჩანაწერები"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_entryDetail"
+            app:destination="@id/entryDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/entryDetailFragment"
+        android:name="com.example.myapplication.frags.EntryDetailsFragment"
+        android:label="ჩანაწერის დეტალები">
+        <argument
+            android:name="entryId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_entry"
+        android:name="com.example.myapplication.frags.AddEntryFragment"
+        android:label="ჩანაწერის დამატება"
+        tools:layout="@layout/fragment_add_entry" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.myapplication.frags.ProfileFragment"
+        android:label="პროფილი"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

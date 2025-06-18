@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:fitsSystemWindows="true"
+    tools:context=".frags.RegisterFragment">
+
+
+<LinearLayout
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="32dp"
+android:text="ანგარიშის შექმნა"
+android:textColor="#474444"
+android:textStyle="bold"
+android:textAppearance="?attr/textAppearanceHeadline4" />
+
+<com.google.android.material.textfield.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="16dp">
+
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/emailEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="ელ-ფოსტა"
+    android:backgroundTint="#A9A9A9"
+    android:inputType="textEmailAddress" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="16dp">
+
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/passwordEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="პაროლი"
+    android:inputType="textPassword"
+    android:backgroundTint="#A9A9A9"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/confirmPasswordInputLayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="24dp">
+
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/confirmPasswordEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="დაადასტურეთ პაროლი"
+    android:backgroundTint="#A9A9A9"
+    android:inputType="textPassword" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.button.MaterialButton
+android:id="@+id/registerButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="16dp"
+android:text="რეგისტრაცია"
+android:textSize="18sp"
+android:backgroundTint="#474545"
+style="@style/Widget.MaterialComponents.Button" />
+
+<ProgressBar
+android:id="@+id/progressBar"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:visibility="gone" />
+
+<TextView
+android:id="@+id/loginTextView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:layout_marginTop="16dp"
+android:text="გაქვს უკვე ანგარიში? ავტორიზაცია"
+android:textSize="15sp"
+android:textStyle="bold"
+android:textColor="#3B3940" />
+    </LinearLayout>
+    </ScrollView>
